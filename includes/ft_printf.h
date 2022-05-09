@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilyes <ilyes@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ilandols <ilyes@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 22:17:53 by ilyes             #+#    #+#             */
-/*   Updated: 2022/05/01 20:18:36 by ilyes            ###   ########.fr       */
+/*   Updated: 2022/05/09 15:09:26 by ilandols         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 # include <stdlib.h>
-# include <stdio.h>
 # include <stdarg.h>
 # include <unistd.h>
 # include "libft.h"
