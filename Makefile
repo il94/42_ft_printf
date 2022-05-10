@@ -65,11 +65,10 @@ $(NAME) : $(OBJ) $(OBJLIB)
 	$(CC) $(CFLAGS) -c $^
 
 clean :
-	$(MAKE) -C $(LIBPATH) clean
 	rm -f $(OBJ)
+	rm -f $(OBJLIB)
 
 fclean : clean
-	$(MAKE) -C $(LIBPATH) fclean
 	rm -f $(NAME)
 
 re : fclean all
