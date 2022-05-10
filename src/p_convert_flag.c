@@ -6,7 +6,7 @@
 /*   By: ilandols <ilyes@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 00:15:09 by ilyes             #+#    #+#             */
-/*   Updated: 2022/05/09 16:11:45 by ilandols         ###   ########.fr       */
+/*   Updated: 2022/05/10 15:00:23 by ilandols         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	p_get_result_size(unsigned long long n, char flag_b)
 		result++;
 		n /= 16;
 	}
-	if (flag_b == ' ')
+	if (flag_b == ' ' || flag_b == '+')
 		result++;
 	return (result);
 }
@@ -51,6 +51,11 @@ void	p_add_flag(char *result, char flag_b)
 	if (flag_b == ' ')
 	{
 		result[i] = ' ';
+		i++;
+	}
+	else if (flag_b == '+')
+	{
+		result[i] = '+';
 		i++;
 	}
 	result[i] = '0';
